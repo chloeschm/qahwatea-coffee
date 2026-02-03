@@ -27,8 +27,9 @@
 
 
 ## If you're interested, here are things we could eventually add to your website!
+    - make compatible for mobile devices
     - "About Me" page with your team photo and more information about you and your store
     - "Posts" page for featured Facebook and Instagram posts
-    - Online ordering system (backend - costs money to publish)
-    - Better setup for the contact form, so it sends messages to a Google Sheets for you rather than taking users to their Email
-    - Whatever additions you think belong, we can make happen !
+    - online ordering system (backend - costs money to publish)
+    - better setup for the contact form, so it sends messages to a Google Sheets for you rather than taking users to their Email
+    - whatever additions you think belong, we can make happen !
