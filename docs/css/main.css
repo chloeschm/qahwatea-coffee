@@ -529,3 +529,117 @@
 .developer-link:hover {
     color: #D4AF37; 
 }
+
+/* MENU PAGE STYLES */
+.main-menu {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-title {
+    color: #8B6F47;
+    font-family: 'Unbounded', sans-serif, cursive;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.reg-menu {
+    display: flex;
+    justify-content: center;
+    max-width: 90%; 
+    margin: 0 auto;
+}
+
+.menu-image {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #B8941F;
+    border-radius: 15px;
+    display: block; 
+    overflow: hidden; 
+}
+
+.social-posts {
+    background-color: #FAF7F2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.check-out {
+    color: #b8956a; 
+    font-family: 'Unbounded', sans-serif, cursive;
+    font-size: 4.5rem;
+}
+
+.neon-link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+.neon-link .underline {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 4px;
+    width: 100%;
+    background-color: #949494;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.neon-link:hover {
+    color: #D4AF37;
+}
+
+.neon-link:hover .underline {
+    background-color: #D4AF37;
+    transform: scaleX(1);
+}
+
+.posts-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.post-item {
+    width: 350px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    outline: 3px solid #D4AF37; 
+    transform: translateY(-5px);
+}
+
+.post-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.post-caption {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.check-up {
+    font-size: 2.8rem;
+    color: #A0826D;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
