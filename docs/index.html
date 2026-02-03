@@ -34,10 +34,178 @@
                         <li><a href="index.html" class="current">Home</a></li>
                         <li><a href="pages/menu.html">Menu</a></li>
                         <li><a href="pages/contact.html">Contact</a></li>
-                        <li><a href="pages/posts.html">Posts</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-- NAME & IMAGE -->
+    <section class="image-banner">
+        <div class="banner-image">
+            <img src="img/coffee-1.jpg" alt="Matcha">
+        </div>
+        <div class="banner-image">
+            <img src="img/pastry-2.jpg" alt="Pastry & Coffee">
+        </div>
+        <div class="banner-image">
+            <img src="img/pastry-1.jpg" alt="Pastries">
+        </div>
+
+        <div class="banner-overlay">
+            <div class="banner-text">
+                <h1>Qahwatea Coffee</h1>
+                <p class="slogan">Premium Yemeni coffee, bold flavors, and a whole new vibe</p>
+            </div>
+            <p class="photo-credit">Photos courtesy of St. Louis County</p>
+        </div>
+    </section>
+
+    <!-- HOURS -->
+    <section class="hours-block">
+        <div class="hours-content">
+            <p class="visit-text">Visit us at</p>
+            <p class="address">15957 Manchester Rd in Ellisville MO</p>
+            <h2>Our Hours</h2>
+            <ul class="hours-list">
+                <li><span class="day">Sunday</span><span class="time">8 AM-10 PM</span></li>
+                <li><span class="day">Monday</span><span class="time">7 AM-10 PM</span></li>
+                <li><span class="day">Tuesday</span><span class="time">7 AM-10 PM</span></li>
+                <li><span class="day">Wednesday</span><span class="time">7 AM-10 PM</span></li>
+                <li><span class="day">Thursday</span><span class="time">7 AM-10 PM</span></li>
+                <li><span class="day">Friday</span><span class="time">7 AM-12 AM</span></li>
+                <li><span class="day">Saturday</span><span class="time">8 AM-12 AM</span></li>
+            </ul>
+        </div>
+        <div class="hours-image">
+            <img src="img/hours-image.png" alt="Qahwatea Coffee">
+        </div>
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section class="features-block">
+        <section class="features-content">
+            <p class="featured-text">Featured Coffee & Snacks</p>
+            <div class="features-gallery">
+                <div class="featured-item">
+                    <img src="img/featured-coffee-1.jpg" alt="Featured Coffee 1">
+                    <p class="feature-caption">Pistachio Latte</p>
+                    <p class="photo-credit-feat">Photo courtesy of St. Louis County</p>
+                </div>
+                <div class="featured-item">
+                    <img src="img/featured-snack-1.jpg" alt="Featured Snack 1">
+                    <p class="feature-caption">Honeycomb Bread</p>
+                </div>
+                <div class="featured-item">
+                    <img src="img/featured-coffee-2.jpg" alt="Featured Coffee 2">
+                    <p class="feature-caption">Adeni Chai</p>
+                    <p class="photo-credit-feat">Photo courtesy of St. Louis County</p>
+                </div>
+                <div class="featured-item">
+                    <img src="img/featured-snack-2.png" alt="Featured Snack 2">
+                    <p class="feature-caption">Fruit Mousse</p>
+                </div>
+            </div>
+            <div class="menu-button">
+                <button onclick="location.href='pages/menu.html'">FULL MENU</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- CLOSER SECTION -->
+    <section class="closer-block">
+        <section class="question-form">
+            <div class="contact-form">
+                <h2 class="form-title">Have Questions?</h2>
+                <h3 class="form-subtitle">Or want to join the family?</h3>
+                <h4 class="invite-subtitle">Send us a message!</h4>
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit">Send Email</button>
+                    </div>
+                </form>
+
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const message = document.getElementById('message').value;
+                        const body = `Name: ${name}
+Email: ${email}
+Message: ${message}`;
+                        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=qahwateacoffee@gmail.com&su=Contact Form&body=${encodeURIComponent(body)}`;
+                        window.open(gmailLink, '_blank');
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section class="closer-content">
+            <p class="sign-off">We look forward to seeing you soon!</p>
+            <div class="info-icons">
+                <div class="icon-item">
+                    <img src="img/yemen-icon.png" alt="Yemen Icon">
+                    <p>Yemeni <br> Coffee</p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/quality-icon.png" alt="Quality Icon">
+                    <p>Quality <br> Brew</p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/bold-icon.png" alt="Bold Icon">
+                    <p>Bold <br> Flavors</p>
+                </div>
+                <div class="icon-item">
+                    <img src="img/menu-icon.png" alt="Menu Icon">
+                    <p>Expanding <br> Menu</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-icons-wrapper">
+                <div class="social-icons">
+                    <a title="Instagram" target="_blank" href="https://www.instagram.com/qahwateacoffee/?hl=en"
+                        class="icon-link">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                        </svg>
+                    </a>
+
+                    <a title="Facebook" target="_blank"
+                        href="https://www.facebook.com/p/Qahwatea-Coffee-61575337266194/" class="icon-link">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                        </svg>
+                    </a>
+
+                    <a title="Email" target="_blank" href="mailto:qahwateacoffee@gmail.com" class="icon-link">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path
+                                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Qahwatea Coffee.</p>
+            <a href="https://chloeschm.github.io/portfolio-website/" class="developer-link">Designed by Chloe</a>
+        </div>
+    </footer>
 </body>
