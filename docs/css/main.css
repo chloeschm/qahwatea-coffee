@@ -643,3 +643,224 @@
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* CONTACT PAGE STYLES */
+.contact-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    color: #8B6F47;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #b8956a;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid #B8941F;
+    text-align: center;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(184, 148, 31, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    color: #8B6F47;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.hours-section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #B8941F;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hours-section h2 {
+    color: #8B6F47;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hours-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #FAF7F2;
+    border-radius: 10px;
+}
+
+.day {
+    font-weight: 600;
+    color: #8B6F47;
+}
+
+.time {
+    color: #666;
+}
+
+.social-section {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid #B8941F;
+}
+
+.social-section h2 {
+    color: #8B6F47;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.social-section p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+    color: #1877F2;
+}
+
+.social-link.instagram {
+    color: #E4405F;
+}
+
+.social-link .underline {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.social-link.facebook .underline {
+    background-color: #1877F2;
+}
+
+.social-link.instagram .underline {
+    background-color: #E4405F;
+}
+
+.social-link:hover .underline {
+    transform: scaleX(1);
+}
+
+.social-link:hover {
+    color: #D4AF37;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 50px 40px;
+    background: linear-gradient(135deg, #B8941F, #D4AF37);
+    border-radius: 20px;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .hours-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
